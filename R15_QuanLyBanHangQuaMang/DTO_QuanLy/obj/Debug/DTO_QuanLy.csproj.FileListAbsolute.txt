@@ -1,0 +1,5 @@
+E:\TÀI LIỆU\CSDL (SQL)\PHÂN TÍCH THIẾT KẾ HTTT\Do An LT_BT Thuc Hanh\TH\R15_QuanLyBanHangQuaMang\DTO_QuanLy\bin\Debug\DTO_QuanLy.dll
+E:\TÀI LIỆU\CSDL (SQL)\PHÂN TÍCH THIẾT KẾ HTTT\Do An LT_BT Thuc Hanh\TH\R15_QuanLyBanHangQuaMang\DTO_QuanLy\bin\Debug\DTO_QuanLy.pdb
+E:\TÀI LIỆU\CSDL (SQL)\PHÂN TÍCH THIẾT KẾ HTTT\Do An LT_BT Thuc Hanh\TH\R15_QuanLyBanHangQuaMang\DTO_QuanLy\obj\Debug\DTO_QuanLy.csprojResolveAssemblyReference.cache
+E:\TÀI LIỆU\CSDL (SQL)\PHÂN TÍCH THIẾT KẾ HTTT\Do An LT_BT Thuc Hanh\TH\R15_QuanLyBanHangQuaMang\DTO_QuanLy\obj\Debug\DTO_QuanLy.dll
+E:\TÀI LIỆU\CSDL (SQL)\PHÂN TÍCH THIẾT KẾ HTTT\Do An LT_BT Thuc Hanh\TH\R15_QuanLyBanHangQuaMang\DTO_QuanLy\obj\Debug\DTO_QuanLy.pdb
