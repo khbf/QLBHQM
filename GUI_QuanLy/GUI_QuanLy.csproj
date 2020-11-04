@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3C6C9822-5E97-4360-ABF5-1EFAACD24C88}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GUI_QuanLy</RootNamespace>
+    <AssemblyName>GUI_QuanLy</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet />
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>GUI_QuanLy.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MHDonGiaoHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MHDonGiaoHang.designer.cs">
+      <DependentUpon>MHDonGiaoHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MHQuanLyMatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MHQuanLyMatHang.Designer.cs">
+      <DependentUpon>MHQuanLyMatHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MHQuanLyNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MHQuanLyNCC.Designer.cs">
+      <DependentUpon>MHQuanLyNCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MHQuanLyNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MHQuanLyNV.Designer.cs">
+      <DependentUpon>MHQuanLyNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MHTrangChu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MHTrangChu.Designer.cs">
+      <DependentUpon>MHTrangChu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MHXuLyComment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MHXuLyComment.Designer.cs">
+      <DependentUpon>MHXuLyComment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MHThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MHThanhToan.Designer.cs">
+      <DependentUpon>MHThanhToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS_QuanLy\BUS_QuanLy.csproj">
+      <Project>{00e07bd9-6d25-49bd-9c8e-e43009b2d8db}</Project>
+      <Name>BUS_QuanLy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO_QuanLy\DTO_QuanLy.csproj">
+      <Project>{843590ba-b69e-4922-a934-35cfbdc9273c}</Project>
+      <Name>DTO_QuanLy</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MHDonGiaoHang.resx">
+      <DependentUpon>MHDonGiaoHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MHQuanLyMatHang.resx">
+      <DependentUpon>MHQuanLyMatHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MHQuanLyNCC.resx">
+      <DependentUpon>MHQuanLyNCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MHQuanLyNV.resx">
+      <DependentUpon>MHQuanLyNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MHTrangChu.resx">
+      <DependentUpon>MHTrangChu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MHXuLyComment.resx">
+      <DependentUpon>MHXuLyComment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MHThanhToan.resx">
+      <DependentUpon>MHThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Asset\payment-mastercard.png" />
+    <Content Include="Asset\payment-paypal.png" />
+    <Content Include="Asset\payment-visa.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
